@@ -1,0 +1,55 @@
+photon@node11:~$ ./stack.out
+
+enter the choice:
+1. push
+2. pop
+3. display
+4. exit1
+
+enter the element34
+
+enter the choice:
+1. push
+2. pop
+3. display
+4. exit1
+
+enter the element56
+
+enter the choice:
+1. push
+2. pop
+3. display
+4. exit1
+
+enter the element78
+
+enter the choice:
+1. push
+2. pop
+3. display
+4. exit1
+
+enter the element90
+
+enter the choice:
+1. push
+2. pop
+3. display
+4. exit2
+
+the popped element is 90
+enter the choice:
+1. push
+2. pop
+3. display
+4. exit3
+
+78
+56
+34
+enter the choice:
+1. push
+2. pop
+3. display
+4. exit4
