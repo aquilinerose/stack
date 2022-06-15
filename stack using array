@@ -1,0 +1,67 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define n 5
+void pop();
+void display();
+int stack[n];
+int top=-1;
+void main()
+{
+	int c;
+	do
+	{
+		printf("\nenter the choice:\n1. push\n2. pop\n3. display\n4. exit");
+		scanf("%d",&c);
+		switch(c)
+		{	
+			case 1:push();
+				break;
+			case 2:pop();
+				break;
+			case 3:display();
+				break;
+			case 4:c=0;
+				break;
+			default:printf("\ninvalid choice");
+		}
+	}while(c!=0);
+}
+void push()
+{
+	int x;
+	printf("\nenter the element");
+	scanf("%d",&x);
+	if(top==n-1)
+	{
+		printf("\noverflow");
+	}
+	else
+	{
+	top++;
+	stack[top]=x;
+	}
+}
+void pop()
+{
+	int item;
+	if(top==-1)
+	{
+		printf("\nunderflow");
+	}
+	else
+	{
+		item=stack[top];
+		top--;
+		printf("\nthe popped element is %d",item);
+	}
+}
+void display()
+{
+	int i;
+	for(i=top;i>=0;i--)
+	{
+		printf("\n%d",stack[i]);
+	}
+}
+		
+		
