@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #define n 5
 void pop();
+void push();
 void display();
 int stack[n];
 int top=-1;
